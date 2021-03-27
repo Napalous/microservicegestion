@@ -1,0 +1,36 @@
+{
+  "name": "Race",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "image",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bovin",
+      "otherEntityRelationshipName": "race",
+      "relationshipName": "bovin"
+    }
+  ],
+  "entityTableName": "race",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["projetgateway", "microservicegestion"],
+  "microserviceName": "microservicegestion",
+  "clientRootFolder": "microservicegestion",
+  "databaseType": "sql",
+  "changelogDate": "20210327170159"
+}

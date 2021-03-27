@@ -1,0 +1,31 @@
+{
+  "name": "TypeBovin",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "bovin",
+      "otherEntityRelationshipName": "typeBovin",
+      "relationshipName": "bovin"
+    }
+  ],
+  "entityTableName": "type_bovin",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["projetgateway", "microservicegestion"],
+  "microserviceName": "microservicegestion",
+  "clientRootFolder": "microservicegestion",
+  "databaseType": "sql",
+  "changelogDate": "20210327170259"
+}

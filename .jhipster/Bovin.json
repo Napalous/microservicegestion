@@ -1,0 +1,47 @@
+{
+  "name": "Bovin",
+  "fields": [
+    {
+      "fieldName": "numero",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "sexe",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "datenaissance",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "race",
+      "otherEntityRelationshipName": "bovin",
+      "relationshipName": "race"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "typeBovin",
+      "otherEntityRelationshipName": "bovin",
+      "relationshipName": "typeBovin"
+    }
+  ],
+  "entityTableName": "bovin",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["projetgateway", "microservicegestion"],
+  "microserviceName": "microservicegestion",
+  "clientRootFolder": "microservicegestion",
+  "databaseType": "sql",
+  "changelogDate": "20210327170059"
+}
