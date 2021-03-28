@@ -42,6 +42,7 @@
     "creationTimestamp": 1616864399701,
     "jwtSecretKey": "YzNkNGFhYmM0YzA2ODJmMGQ3MTRmNTlkMmU1NzY4ODhmNjNmMDU4MmNjM2Q2MTBhMTM2MjdmMmZlYjJkNTdlMTVmNDgxMDQ3MjdhYTJjZjk3MzMyMjQ2YjNiNGQ5MDVjMGE0ODcxNWUxOGFlZjRhYjM5ODY2NGE1NTRkMzFlZmI=",
     "entities": ["Bovin", "Race", "TypeBovin"],
-    "lastLiquibaseTimestamp": 1616864579000
+    "lastLiquibaseTimestamp": 1616864579000,
+    "appFolder": "microservicegestion"
   }
 }
